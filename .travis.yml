@@ -16,5 +16,7 @@ install:
   - pip install --upgrade xlrd  # For IPP tests, xlrd >= 0.9 is needed.
   - pip install -r requirements.txt
 script:
+  - sudo python setup.py compile_catalog
+  - sudo python setup.py develop --no-deps
   - paster serve development.ini &
   - nosetests openfisca_web_api/tests
