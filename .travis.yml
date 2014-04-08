@@ -11,6 +11,7 @@ before_install:
   - sudo apt-get install -qq python-pastescript
   - sudo apt-get install -qq python-babel
   - sudo apt-get install -qq python-webob
+  - sudo apt-get install -qq python-weberror
 install:
   - pip install isodate  # For Biryani1 datetimeconv
   - pip install -e git+https://github.com/etalab/biryani.git@biryani1#egg=Biryani1  # For OpenFisca-Core
