@@ -3,3 +3,4 @@ isodate==0.5.0
 -e git+https://github.com/openfisca/openfisca-core.git#egg=OpenFisca-Core
 -e git+https://github.com/openfisca/openfisca-france.git#egg=OpenFisca-France
 -e .
+
