@@ -17,5 +17,5 @@ install:
   - pip install -e git+https://github.com/openfisca/openfisca-france.git#egg=OpenFisca-France
   - pip install -r requirements.txt
 script:
-  - paster serve development.ini &
+  - python /usr/bin/paster serve development.ini &
   - nosetests openfisca_web_api/tests
