@@ -130,8 +130,8 @@ def test_case_study():
                             id = 'ind2',
                             ),
                         dict(
-                            birth = '2005-12-29',
-                            id = 'ind2',
+                            birth = '2000-12-29',
+                            id = 'ind3',
                             ),
                         ],
                     menages = [
