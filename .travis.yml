@@ -19,5 +19,5 @@ install:
   - pip install -r requirements.txt
 script:
   - python /usr/bin/paster serve development.ini &
-  - ping localhost -n 5 > NUL
+  - sleep 5
   - nosetests openfisca_web_api/tests
