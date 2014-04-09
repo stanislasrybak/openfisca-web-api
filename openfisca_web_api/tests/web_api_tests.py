@@ -62,6 +62,7 @@ api_response_to_value = conv.pipe(
                 conv.not_none,
                 ),
             value = conv.noop,
+            suggestions = conv.noop,
             ),
         constructor = collections.OrderedDict,
         ),
