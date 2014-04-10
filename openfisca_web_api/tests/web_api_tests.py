@@ -57,6 +57,12 @@ api_response_to_value = conv.pipe(
                 conv.not_none,
                 ),
             params = conv.test_isinstance(dict),
+            tracebacks = conv.pipe(
+                conv.test_isinstance(list),
+                conv.uniform_sequence(
+                    conv.test_isinstance(dict),
+                    ),
+                ),
             url = conv.pipe(
                 conv.make_input_to_url(full = True),
                 conv.not_none,
@@ -140,6 +146,7 @@ def test_case_study():
                 year = 2013,
                 ),
             ],
+        trace = True,
         )
     print unicode(json.dumps(result, ensure_ascii = False, indent = 2)).encode('utf-8')
 
